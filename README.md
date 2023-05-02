@@ -1,2 +1,2 @@
 # CD
-Don't use this repo for copying in exams
+`Note:` Don't use this repo for copying in exams

@@ -24,3 +24,13 @@ void main()  {
     else
         printf("The Given Grammar has no Left Recursion");
 }
+
+/*
+OUTPUT:
+------
+Enter the productions: A->Aa|b
+The productions after eliminating Left Recursion are:
+A->aA'
+A'->bA'
+A'->ε
+*/

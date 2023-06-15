@@ -33,12 +33,16 @@ void ELR(char s[]) {
 		return;
 	}
 	printf("After elimination of left recursion \n");
+	int f=0;
 	printf("%c->",s[0]);
 	for(i=0;i<=p;i++) {
 		if(s[0]!=s1[i][0]) {
+			if(f)
+			   printf("|");
 			for(j=0;j<count[i];j++)
 				printf("%c",s1[i][j]);
 			printf("%c'",s[0]);
+			f=1;
 		}
 	}
 	printf("\n%c'->",s[0]);
